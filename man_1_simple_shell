@@ -1,0 +1,89 @@
+.TH BA_SHELL 1   "August 25 2021" "HOLBERTON SCHOOL CH14"
+
+
+.SH NAME
+  BAShell.
+- BAShell is a simple shell that can be compiled and executed from the command line.
+
+.SH SYNOPSIS
+
+.B ./BAShell
+
+.SH  DESCRIPTION
+.B BAShell is a simple command line interpreter, that ptovides a command liner user interface meaning thtat it reads lines from either file or terminal (standart input), interprets them, and executes commands. The firs Unix shell was the Thompson shell, sh , written by Ken Thompson. Simple_check will chech if the fisrts argument passed to it , is a built-in (ls, cd, pwd, etc). If it fails, it will check wheter is a bulit-in script, if not then it will check tha PATH for the executable file. And only when it finds it, will execute the command.
+
+.SH  OVERVIEW
+simple_shell interprets and executes command that the same simple_shell reads from the standard input or files.
+
+.SH INVOCATION
+First compile BAShell with the exery \".c\" file in your current directory, using the specified
+flags. Use the wildcard '*' to get all your \".c\" files.
+.P
+.RS
+.IP -Compilling
+.B gcc -Wall -Werror -Wextra -pedantic *.c -o BAShell
+.P
+.RE
+BAShell can run in interactive mode by typing "./BAShell" on the command line, and then hit "Enter".
+prompt "$ " appears you are in interactive mode, meaning you can type your commands followed by "Enter". Type:
+.P
+.RS
+.B ./BAShell
+.P
+.RE
+.IP -Non-Interactive-mode.
+Also, simple_shell works in non-interactive mode with shell scripts.
+.P
+.RS
+.B echo 'pwd' | ./BAShell
+.P
+.SH EXAMPLES
+A few of the commands that can be executed in the simple_shell, included in the PATH environment variable:
+.P
+.B ls
+.P
+--- List files and directories
+.P
+.B pwd
+.P
+--- Prints current working directory
+.P
+.B mkdir
+.P
+--- Creates directory
+.P
+
+.SH BUILTINS
+Here, we list the built-in commands from the BAShell program. They are buit-in for efficiecy.
+.P
+.B cd
+.P
+--- Switch to HOME directory.
+.P
+.B cd ..
+.P
+--- Moves up one directory.
+.P
+.B cd [directory]
+.P
+--- Switch to specified directory.
+.P
+.B exit
+.P
+--- Terminate the shell process.
+.P
+.B env
+.P
+--- Prints all environment variables.
+.P
+
+.SH SEE ALSO
+sh(1) man page.
+
+.SH AUTHORS
+
+.B Firdaus H. Salim 
+.B <firdaushassan033@gmail.com>
+
+.B Aaron Kaddu Muzira 
+.B <aaronmuzira@gmail.com>
