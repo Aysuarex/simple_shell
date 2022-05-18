@@ -17,7 +17,7 @@
 #define TOK_DELIM " \t\r\n\a"
 
 /* Points to an array of pointers to strings called the "environment" */
-extern char **environ;
+extern char **environ.;
 
 
 /**
@@ -28,7 +28,7 @@ extern char **environ;
  * @status: last status of the shell
  * @counter: lines counter
  * @_environ: environment variable
- * @pid: process ID of the shell
+ * @pid: process ID of the shell.
  */
 typedef struct data
 {
