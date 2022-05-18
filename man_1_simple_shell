@@ -10,7 +10,7 @@ hsh\fR \- simple UNIX command interpreter
 soda\fR [\fIfilename\fR]
 
 .SH COPYRIGHT
-hsh is Copyright (C) 2022 by Emmanuella Amukwuo and Adedolaju Bamidele
+hsh is Copyright (C) 2022 by Ismail Jamiu and Ayomide Suara
 
 .SH DESCRIPTION
 hsh\fR is a sh-compatible command language interpreter that executes commands read from the standard input or from a file.
@@ -95,4 +95,4 @@ access(2), chdir(2), execve(2), _exit(2), exit(3), fflush(3), fork(2), free(3), 
 Sodash\fR takes basic functionality of the \fBsh\fR shell. This man page is based on the man page bash(1)
 
 .SH AUTHORS
-Emmanuella Amukwuo and Bamidele Adefolaju
+Ismail Jamiu and Ayomide Suara
